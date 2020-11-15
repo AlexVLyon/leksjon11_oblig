@@ -1,0 +1,73 @@
+*{
+    font-family: Tahoma,Verdana,Segoe,sans-serif; 
+}
+
+header {
+    grid-area: header;
+  }
+main {
+    grid-area: main;
+  }
+
+#app{
+    margin: 0 auto;
+    display:grid;
+   
+    grid-template-areas:
+    "header header header"
+    "main main main";
+    Grid-template-columns: 1fr 1fr 1fr;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100 auto;
+    border: 1px solid #00000019;
+    box-shadow: 0px 8px 10px  #00000019;
+}
+
+h1{
+    margin-left: 50px;
+    float:left;
+}
+
+#userNameBar{
+    float: right;
+    text-align: center;
+    margin-right: 100px;
+}
+
+main{
+    width:80%;
+    max-width:1500px;
+    margin:0 auto;
+}
+
+#newTodo{
+    border: 2px solid #333333;
+    background:white;
+    padding:10px 50px;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+#todoList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.poll{
+    padding:15px;
+    list-style: none;
+    width: 28%;
+    box-shadow: 0px 8px 10px  #3d898b83;
+
+}
+
