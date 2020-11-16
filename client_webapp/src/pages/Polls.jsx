@@ -13,19 +13,30 @@ const Polls = () => {
     );
   const [users, setUsers] = useState([]); 
 
-  const [currUser, setCurrUser] = useState();
+  const [currUser, setCurrUser] = useState({id:"", epost:""});
 
-  const setTheCurrentUser = (id) => {
-    setCurrUser(id);
+  const setTheCurrentUser = (id, epost) => {
+    setCurrUser({id:id, epost: epost});
   }
 
   const answearJa = async (id) => {
-    const res = await api.patch(`/ja/${id}`, {"_id" : currUser});
+    if(currUser.id !== ""){
+    const res = await api.patch(`/ja/${id}`, {"_id" : currUser.id});
     console.log(res)
+    }
+    else{
+      alert("Choose user")
+    }
    }
+
    const answearNei = async (id) => {
-     const res = await api.patch(`/nei/${id}`, {"_id" : currUser});
+    if(currUser.id !== ""){
+     const res = await api.patch(`/nei/${id}`, {"_id" : currUser.id});
     console.log(res)
+    }
+    else{
+      alert("Choose user!")
+    }
    }
  
 
@@ -58,8 +69,8 @@ const Polls = () => {
   
   return (
     <>
-    <p>Current user: {currUser}</p>
-    <a href="/newpoll">Create Poll</a>
+    <p>Current user: {currUser.epost}</p>
+    
     <section>    
 
 
@@ -71,6 +82,8 @@ const Polls = () => {
         ))}
 
       </ul>
+
+      <a href="/newpoll" id="newPoll">+</a>
 
       <Title title="Users"/>
 

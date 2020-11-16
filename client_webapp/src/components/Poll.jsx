@@ -28,8 +28,8 @@ function Poll({ poll , jaAnswears ,answearJa, answearNei}){
       <li className="poll" key={poll._id}>
   
         <Title title={poll.question} />
-        <button onClick={ () => answearJa(poll._id)}>{poll.ja}</button>
-        <button onClick={ () => answearNei(poll._id)}>{poll.nei}</button>
+        <button className="pollButton" onClick={ () => answearJa(poll._id)}>{poll.ja}</button><br/>
+        <button className="pollButton" onClick={ () => answearNei(poll._id)}>{poll.nei}</button>
         <p>Answers:</p>
 
         <p>ja: {amountJaVotes}</p>

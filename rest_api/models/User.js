@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const UserSchema = mongoose.Schema({
-    name: {
+    epost: {
         type: String,
         required: true
         },

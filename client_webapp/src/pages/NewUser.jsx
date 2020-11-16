@@ -9,14 +9,13 @@ const api = axios.create({
 
 const NewUser = () => {
   const [charCount, setcharCount] = useState(0);
-  const [formData, setFormData] = useState({name:''});
+  const [formData, setFormData] = useState({epost:''});
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
-    const sendData = formData
+
     const postData = {
-        name: formData.name
+        epost: formData.epost
     }
     createUser(postData);
 
@@ -52,11 +51,11 @@ const NewUser = () => {
 
         <form onSubmit={handleSubmit}>
 
-        <label>UserName:</label>
+        <label>Epost:</label>
             <input
             className="inputFelt"
-            value={formData.name}
-            name="name"
+            value={formData.epost}
+            name="epost"
             onChange={updateValue}
             autoFocus
             />

@@ -9,7 +9,7 @@ main {
     grid-area: main;
   }
 
-#app{
+body{
     margin: 0 auto;
     display:grid;
    
@@ -41,6 +41,19 @@ h1{
     margin-right: 100px;
 }
 
+#newPoll {
+    display:inline-block;
+    height: 75px;
+    width: 75px;
+    color:black;
+    text-decoration: none;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+    font-size: 55px;
+    
+}
+
 main{
     width:80%;
     max-width:1500px;
@@ -56,18 +69,36 @@ main{
     margin-bottom: 75px;
 }
 
-#todoList{
+#pollList{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content: space-around;
+    justify-content: left;
+}
+
+#userList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: left;
+}
+
+.user{
+    padding:15px;
+    list-style:none;
+    border: solid black;
+    margin: 5px;
 }
 
 .poll{
     padding:15px;
     list-style: none;
-    width: 28%;
-    box-shadow: 0px 8px 10px  #3d898b83;
+    width: 50%;
+    box-shadow: 0px 8px 10px  #7209606c;
 
 }
+
+#pollButton{
+    margin:10px;
+}   
 

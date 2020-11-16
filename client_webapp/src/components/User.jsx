@@ -5,9 +5,9 @@ function User({ user, setTheCurrentUser}){
     return(
       <>
       <li className="user" key={user._id}>
-        <Title title={user.name} />
+        <Title title={user.epost} />
         <p>id: {user._id}</p>
-        <button className="setUserButton" onClick={ () => setTheCurrentUser(user._id)}>Set User</button>
+        <button className="setUserButton" onClick={ () => setTheCurrentUser(user._id, user.epost)}>Set User</button>
       </li>
      </>
     )
