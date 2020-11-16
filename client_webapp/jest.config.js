@@ -18,12 +18,11 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/test/setupTests.js'],
 
   // The test environment that will be used for testing
-  testEnvironment: "jsdom",
+  testEnvironment: "node",
 
   // The glob patterns Jest uses to detect test files
   testMatch: [
-    "<rootDir>/test/**/?(*.)+(spec|test).[tj]s?(x)"
-  ],
+    "<rootDir>/test/**/?(*.)+(spec|test).[tj]s?(x)"  ],
 
 
 };
