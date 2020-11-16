@@ -1,14 +1,10 @@
 import React, {useState} from "react";
 import Title from "./Title"
 
-function Poll({ poll , answearJa, answearNei}){
-
-  // TODO: BYTT TIL STATE, får "not iterable" når prøver på state
-
+function Poll({ poll , jaAnswears ,answearJa, answearNei}){
+  // TODO: BYTT TIL STATE, får "not iterable" når prøver på state på poll.jaVotes.length
   //const [jaVotes, setJaVotes] = useState([...poll.jaVotes]);
-
-  const [jaVotes, setJaVotes] = useState([]);
-  const [neiVotes, setNeiVotes] = useState([]);
+  //const [neiVotes, setNeiVotes] = useState([]);
     //setJaVotes((prev) => [{ ...poll.jaVotes }, ...prev])
 
   let amountJaVotes = 0;
@@ -20,7 +16,6 @@ function Poll({ poll , answearJa, answearNei}){
 
   if (arrayOfJaVotes  && arrayOfJaVotes.length > 0) {
     amountJaVotes = arrayOfJaVotes.length
-    
     //setJaVotes((prev) => [{ ...arrayOfJaVotes }, ...prev]);
   }
 

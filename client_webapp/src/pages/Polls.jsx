@@ -20,14 +20,10 @@ const Polls = () => {
   }
 
   const answearJa = async (id) => {
-    console.log("ja start");
-
     const res = await api.patch(`/ja/${id}`, {"_id" : currUser});
-
     console.log(res)
    }
    const answearNei = async (id) => {
-     console.log("nei start");
      const res = await api.patch(`/nei/${id}`, {"_id" : currUser});
     console.log(res)
    }
@@ -70,6 +66,8 @@ const Polls = () => {
       <ul  id="pollList">
         {polls.map((poll) =>(
             <Poll poll={poll} answearJa = {answearJa} answearNei={answearNei}/>
+
+            
         ))}
 
       </ul>
