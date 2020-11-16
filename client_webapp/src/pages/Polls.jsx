@@ -66,7 +66,7 @@ const Polls = () => {
       <ul  id="pollList">
         {polls.map((poll) =>(
             <Poll poll={poll} answearJa = {answearJa} answearNei={answearNei}/>
-
+            
             
         ))}
 

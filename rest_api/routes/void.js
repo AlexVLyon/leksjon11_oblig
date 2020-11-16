@@ -1,3 +1,6 @@
+//VOID prøvde å sette meg skikkelig inn i REST
+
+
 /*import express from 'express';
 const router = express.Router();
 import { postController } from '../controllers/index.js';
