@@ -1,8 +1,8 @@
 import React from 'react'
 import { shallow, mount } from "enzyme"
-import { App } from '../App'
+import { App } from '../src/App'
 
-it('should contain the text "Hello World"', () => {
+it('should contain "Routes" ', () => {
   const wrapper = mount(<App />)
-  expect(wrapper.text()).toContain('http://localhost:5000/poll')
+  expect(wrapper.text()).toContain('Routes')
 })
