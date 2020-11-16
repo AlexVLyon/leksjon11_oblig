@@ -8,7 +8,7 @@ const Navbar = () =>{
         <h1>Pollmaker 3000</h1>
   
         <div id="userNameBar">
-            <p className="headerBar">User user</p>
+    <p className="headerBar">User</p>
           </div>
         </header>
       </>

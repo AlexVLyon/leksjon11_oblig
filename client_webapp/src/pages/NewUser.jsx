@@ -18,8 +18,6 @@ const NewUser = () => {
         epost: formData.epost
     }
     createUser(postData);
-
-
   };
 
   const createUser = async (data) => {
@@ -30,9 +28,9 @@ const NewUser = () => {
       });
 
     console.log(res)
+    window.location.href = "../";
 
   };
-
 
 
   const updateValue = (event) => {  
@@ -42,8 +40,6 @@ const NewUser = () => {
         ...inputValue
       }));
   };
-
-
 
   return (
       <>

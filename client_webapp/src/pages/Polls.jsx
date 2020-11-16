@@ -9,8 +9,7 @@ const api = axios.create({
 
 const Polls = () => {
 
-  const [polls, setPolls] = useState([{test: 1}]
-    );
+  const [polls, setPolls] = useState([]);
   const [users, setUsers] = useState([]); 
 
   const [currUser, setCurrUser] = useState({id:"", epost:""});
