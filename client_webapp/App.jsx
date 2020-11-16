@@ -1,5 +1,4 @@
 import React, {useState, useEffect } from 'react';
-import { ThemeProvider, CSSReset } from '@chakra-ui/core';
 import Routes from './src/routes/Routes';
 import Poll from "./src/components/Poll"
 import axios from 'axios'
