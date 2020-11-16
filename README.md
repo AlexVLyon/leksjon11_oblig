@@ -2,7 +2,7 @@
 
 ## Kjør både rest_api og clienten
 
-##REST:
+## REST:
 - npm install
 - npm start
 
@@ -10,4 +10,4 @@
 - npm install
 - npm run dev
 
- Rest er koblet til Atlas database på netter
+ Rest is connected to atlas mongoDB online
