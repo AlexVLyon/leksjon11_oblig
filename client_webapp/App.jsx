@@ -15,9 +15,6 @@ const App = () => {
 
   //TODO: GLOBAL STATE
 
-  
-  
-
   return(
     <div className="App">
       <Routes/>

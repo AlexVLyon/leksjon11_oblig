@@ -7,6 +7,8 @@ function Poll({ poll ,answearJa, answearNei}){
 
   const [jaVotes, setJaVotes] = useState([...poll.jaVotes]);
   const [neiVotes, setNeiVotes] = useState([...poll.neiVotes]);
+
+  //Tull jeg holdt på med når state ikke fungerte
     //setJaVotes((prev) => [{ ...poll.jaVotes }, ...prev])
 /*
   let amountJaVotes = 0;
@@ -34,8 +36,8 @@ function Poll({ poll ,answearJa, answearNei}){
         <button className="pollButton" onClick={ () => answearJa(poll._id)}>{poll.ja}</button><br/>
         <button className="pollButton" onClick={ () => answearNei(poll._id)}>{poll.nei}</button>
         <p>Answers:</p>
-        <p> ja med state {jaVotes.length}</p>
-        <p> nei med state {neiVotes.length}</p>
+        <p> ja {jaVotes.length}</p>
+        <p> nei {neiVotes.length}</p>
       </li>
      </>
     )

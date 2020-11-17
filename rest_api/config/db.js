@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 
 const connectDatabase = async () => {
   let dbCon;
+  
   try {
     dbCon = await mongoose.connect(process.env.DB_CONNECTION, {
       useNewUrlParser: true,
