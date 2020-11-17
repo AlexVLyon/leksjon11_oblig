@@ -55,7 +55,7 @@ const NewUser = () => {
             onChange={updateValue}
             autoFocus
             />
-            <button id="createButton" type="submit">Create User</button>)
+            <button id="createButton" type="submit">Create User</button>
         </form>
         
     </>

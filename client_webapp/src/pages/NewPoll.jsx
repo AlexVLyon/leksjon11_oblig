@@ -56,7 +56,7 @@ const NewPoll = () => {
             onChange={updateValue}
             autoFocus
             />
-            <button id="createButton" type="submit">Create Poll</button>)
+            <button id="createButton" type="submit">Create Poll</button>
         </form>
         
     </>
